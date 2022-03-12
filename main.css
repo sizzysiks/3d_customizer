@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.navigation{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    display: flex;
+}
+.steps{
+    width: max-content;
+    color:white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.steps p{
+    font-size: 0.8rem;
+}
+.steps:nth-child(1){
+    background: rgb(24, 255, 36);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+.steps:nth-child(1):hover{
+    background: rgb(0, 0, 0);
+}
+.steps:nth-child(2){
+    background: rgb(100, 100, 100);
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.steps:nth-child(2):hover{
+    background: rgb(0, 0, 0);
+}
+.steps-number{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info{
+    position: fixed;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+.info p {
+    text-align: right;
+    font-size: 0.9rem;
+}
+.info span{
+    font-size: 1.3rem;
+}
+
+
+.parts {
+    position: fixed;
+    bottom: 17vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    z-index: 3;
+}
+.parts span{
+    text-align: center;
+    width: 80%;
+    font-weight: 500;
+    font-size: 16px;
+}
+.parts button{
+    background: black;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.parts button:hover{
+    background-color: rgb(39, 39, 39);
+    transform: scaleX(1.5);
+}
+.parts i{
+    color: white;
+}
+
+
+.colors{
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.colors div {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    border: 1px solid grey;
+}
+.colors div:hover{
+    width: 30px;
+    height: 30px;
+}
+#white{
+    background: white;
+}
+#black{
+    background: black;
+}
+#red {
+    background-color: #e42127;
+}
+#green{
+    background: #42cf3f;
+}
+#blue{
+    background: #3d3ce7;
+}
+#yellow{
+    background: #f1b132;
+}
+#purple{
+    background: #901e94;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
